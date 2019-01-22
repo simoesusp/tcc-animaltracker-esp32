@@ -13,7 +13,6 @@ BLEScan *pBLEScan;
 
 void AdvertisingPayLoadReader(uint8_t *payload, size_t payloadSize)
 {
-  //printf("\n Started Decoding, Size: %d \n ",payloadSize);
 
   // uint8_t auxPayload[16] = {  payload[9],payload[10] ,payload[11],payload[12],
   //                             payload[13],payload[14],payload[15],payload[16],
