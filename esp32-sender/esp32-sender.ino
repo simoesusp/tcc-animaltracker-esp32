@@ -33,9 +33,9 @@ void AdvertisingPayLoadReader(uint8_t *payload, size_t payloadSize)
 
   printf("\n UUID: %s\n", string);
 
-    LoRa.beginPacket();
-    LoRa.print(string);
-    LoRa.endPacket();
+  LoRa.beginPacket();
+  LoRa.print(string);
+  LoRa.endPacket();
 }
 void LoRaData() {
 
@@ -102,5 +102,5 @@ void loop()
   Serial.println("Scan done!");
   pBLEScan->clearResults(); // delete results fromBLEScan buffer to release memory
   LoRaData();
-  delay(1000);
+  delay(scanTime);
 }
